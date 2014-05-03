@@ -4,7 +4,7 @@ endif
 
 let g:mkdir_loaded = 1
 
-function! s:Mkdir()
+function s:Mkdir()
   let dir = expand('%:p:h')
 
   if !isdirectory(dir)
@@ -13,5 +13,5 @@ function! s:Mkdir()
   endif
 endfunction
 
-command! Mkdir call s:Mkdir()
+command Mkdir call s:Mkdir()
 autocmd BufWritePre * call s:Mkdir()
