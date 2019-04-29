@@ -6,15 +6,14 @@
 
 ## Installation
 
-1. Use pathogen
-2. Clone to `~/.vim/bundle/mkdir`
+Install using your preferred vim plugin management plugin.
 
 ## Usage
 
-~~~
+```
 :e this/does/not/exist/file.txt
 :w
-~~~
+```
 
-Smile when you are not presented with an error. In stead, notice that 
+Smile when you are not presented with an error. Instead, notice that 
 vim has automatically created the non-existent directory for you.
